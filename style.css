@@ -1,0 +1,47 @@
+body {
+    background-color: #f8ebeb;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 20px;
+}
+
+.profile-heading {
+    grid-column-start: 0;
+    grid-column-end: 1;
+    height : 300px;
+    margin: auto;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.profile-text {
+    text-align: center;
+}
+
+.profile-img {
+    height: 300px;
+}
+
+.main-content {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.section {
+    width: 700px;
+}
+
+.section-heading {
+
+}
+
+.section-text {
+    font-size: 20px;
+}
+
+.work {
+    font-size: 20px;
+}
