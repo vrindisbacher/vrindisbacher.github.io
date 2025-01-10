@@ -1,0 +1,159 @@
+/* TODO: scroll bar */
+
+body {
+    background-color: #14181f;
+    color: #e6e6e6;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+    color: #759cc5;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+    }
+}
+
+.profile {
+    margin: auto;
+    padding-top: 50px;
+    justify-content: center;
+    text-align: center;
+    view-timeline-name: --profile;
+	animation: linear hide-profile;
+	animation-timeline: --profile;
+	animation-range: exit 30%;
+}
+@keyframes hide-profile {
+	from {
+		opacity: 1;
+		transform: scale(1);
+	}
+	to {
+		opacity: 0;
+		transform: scale(0.7);
+	}
+}
+
+.profile-text {
+    font-family: "Bruno Ace SC", serif;
+}
+
+.profile-img {
+    height: 200px;
+    border-radius: 100%
+}
+
+.main-content {
+    padding: 0 20% 50px;
+    font-size: 21px;
+}
+
+.section {
+    display: inline-block;
+    width: 100%;
+}
+
+.section-heading {
+    text-align: center;
+    color: #1767bd;
+    font-size: 44px;
+    font-family: "Bruno Ace SC", serif;
+    margin-bottom: 30px;
+}
+
+.about-me {
+    border-bottom: 1px solid #0a509b94;
+    background-color: #262d3b48;
+    border-radius: 15px;
+    padding: 25px 35px;
+    margin-bottom: 40px;
+    div {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.sub-section {    
+    border-bottom: 1px solid #0a509b94;
+    background-color: #262d3b48;
+    padding: 15px 25px;;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.sub-section-heading {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.work-education {
+    display: flex; 
+    flex-direction: row; 
+    padding: 30px 20px;
+}
+
+.alternating {
+    &:nth-child(odd) {
+        text-align: right;
+        float: right;
+    }
+    float: left;
+    position: relative;
+    width: 80%;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: #262d3b;
+    text-align: center;
+    margin-top: 40px;
+    .contact-icon {
+        margin: 20px 15px;
+        height: 40px;
+        transition: transform .1s;
+        &:hover {
+            transform: scale(1.12) !important;
+        }
+        view-timeline-name: --footer-icon;
+        view-timeline-axis: block;
+        animation: linear reveal-icon both;
+        animation-timeline: --footer-icon;
+        animation-range: entry 0%;
+    }
+    margin: auto;
+	view-timeline-name: --footer;
+	view-timeline-axis: block;
+	animation: linear reveal both;
+	animation-timeline: --footer;
+	animation-range: entry 0%
+}
+@keyframes reveal {
+	from {
+		opacity: 0;
+		width: 100%;
+		background: radial-gradient(#262d3b, transparent);
+		border-radius: 100%;
+	}
+	to {
+		opacity: 1;
+		width: 100%;
+		background: #262d3b;
+	}
+}
+@keyframes reveal-icon {
+	from {
+		opacity: 0;
+		height: 0;
+
+	}
+	to {
+		opacity: 1;
+		height: 40px;
+	}
+}

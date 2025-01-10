@@ -1,0 +1,20 @@
+.main-content {
+    padding: 0 15% 50px;
+    font-size: 18px;
+}
+
+.profile-img {
+    height: 150px;
+}
+
+.profile-text {
+    font-size: 26px;
+}
+
+.section-heading {
+    font-size: 36px;
+}
+
+.sub-section-heading {
+    font-size: 22px;
+}
