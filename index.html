@@ -8,13 +8,20 @@
   <meta name="author" content="Vivien Rindisbacher">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <link rel="icon" type="image/png" href="favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Bruno+Ace+SC&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Bruno+Ace+SC&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
   <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-  <link href="styles.css" rel="stylesheet" type="text/css"/>
-  <link href="style_between.css" rel="stylesheet" type="text/css" media="screen and (max-width: 1200px) and (min-width: 600px)">
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link href="style_between.css" rel="stylesheet" type="text/css"
+    media="screen and (max-width: 1200px) and (min-width: 600px)">
   <link href="style_mobile.css" media="screen and (max-width: 600px)" rel="stylesheet" type="text/css" />
 </head>
 
@@ -32,10 +39,15 @@
           <div> Hello! I am a PhD Student in the
             <a target="_blank" href="https://cseweb.ucsd.edu/groups/progsys/">Programming Systems Group @ UCSD</a>.
           </div>
-          <div> My interests currently lie in lightweight verification. I mostly work on verification tools (like <a target="_blank" href="https://flux-rs.github.io/flux/index.html">Flux</a>)
-		and on verifying security properties of complex systems. Ultimately, I want my work to meaningfully reduce the number of bugs that exist in code.
+          <div>
+            I mostly work at the intersection of programming
+            languages and security,
+            focusing on pragmatic verification.
+            Ultimately, I want my work to meaningfully reduce the number of bugs that exist in code.
           </div>
-          <div> Before joining UCSD, I worked as a Software Engineer at <a target="_blank" href="https://dimensional.com">Dimensional Fund Advisors</a> and completed my undergrad at Boston University where I worked on <i>Formally Verifying Algorithms for Differential Privacy</i>, with
+          <div> Before joining UCSD, I worked as a Software Engineer at <a target="_blank"
+              href="https://dimensional.com">Dimensional Fund Advisors</a> and completed my undergrad at Boston
+            University where I worked on <i>Formally Verifying Algorithms for Differential Privacy</i>, with
             <a href="https://cs-people.bu.edu/gaboardi/" target="_blank">Professor Marco Gaboardi (BU)</a> and
             <a href="http://arthuraa.net/" target="_blank">Professor Arthur Azevedo De Amorim (RIT)</a>.
           </div>
@@ -45,48 +57,47 @@
         <h2 class="section-heading">Projects</h2>
         <div class="sub-section alternating">
           <p>
-            <a class="sub-section-heading" href="https://www.youtube.com/watch?v=9dCJVP4PrZw&ab_channel=ACMSIGPLAN" target="_blank"><i>CoqPL Talk on Verified Differential Privacy</i></a>
-            <span>You can read the extended abstract below.</span>
+            <i class="sub-section-heading">Verified Tock</i>
+            <a class="" href="https://www.youtube.com/watch?v=reU2rOIjAPY" target="_blank"><i>Talk</i></a>
+            -
+            <a class="" href="https://sites.google.com/view/rustverify2025" target="_blank"><i>Rust Verification
+                Workshop</i></a>
+            -
+            <a class="" href="https://github.com/PLSysSec/tock" target="_blank"><i>Repo</i></a>
+            <br>
+            <span style="top: 10px; position: relative;">
+              Verification of process isolation in the Tock Embedded OS using <a target="_blank"
+                href="https://flux-rs.github.io/flux/index.html">Flux</a>,
+              a lightweight verifier for Rust.
+            </span>
           </p>
         </div>
         <div class="sub-section alternating">
           <p>
-            <a class="sub-section-heading" href="Verified-Diff-Priv.pdf" target="_blank">
-              <i>Verified Differential Privacy for Finite Computers</i>
+            <i class="sub-section-heading">Verified Differential Privacy for Finite Computers</i>
+            <a class="" href="Verified-Diff-Priv.pdf" target="_blank">
+              <i>Extended Abstract</i>
             </a>
-            <span>
+            -
+            <a class="" href="https://www.youtube.com/watch?v=9dCJVP4PrZw&ab_channel=ACMSIGPLAN" target="_blank">
+              <i>Talk</i>
+            </a>
+            <br>
+            <span style="top: 10px; position: relative">
+              Verifying algorithms
               This extended abstract details part of my work on verifying algorithms for
               Differential Privacy using the Coq Proof Assistant. I submitted and presented this work at CoqPL
-              2023. Since then, I have verified two "fast" implementations of the Geometric Mechanism, and have worked on verifying a few other DP Mechanisms using a library derived from my original work.
-	    </span>
-          </p>
-        </div>
-        <div class="sub-section alternating">
-          <p>
-            <a class="sub-section-heading" href="https://flux-rs.github.io/flux/index.html" target="_blank"><i>Flux - Refinement Types for Rust</i></a>
-            <span>I actively contribute to Flux, a lightweight verification tool for Flux.</span>
-          </p>
-        </div>
-        <div class="sub-section alternating">
-          <p>
-            <a class="sub-section-heading" href="https://github.com/PLSysSec/tock" target="_blank"><i>Verified Tock</i></a>
-            <span>I actively contribute to VTock - a project aiming to verify security properties for the Tock Embedded Operating System.</span>
-          </p>
-        </div>
-        <div class="sub-section alternating">
-          <p>
-            <span class="sub-section-heading">
-              <a href="pybt.pdf" target="_blank"><i>A Primer on Property Based Testing for Python</i></a> -
-              <a href="https://github.com/vrindisbacher/python-property-based-testing/tree/pybt-1.0" target="_blank">Source Code</a>
+              2023. Since then, I have verified two "fast" implementations of the Geometric Mechanism, and have worked
+              on verifying a few other DP Mechanisms using a library derived from my original work.
             </span>
-            <span>PyBT is a python library for property based testing I created, in an effort
-              to get my fellow engineers to use verification-like methods.</span>
           </p>
         </div>
         <div class="sub-section alternating">
           <p>
-            <a class="sub-section-heading" href="https://heatadjustedpower.com" target="_blank"><i>Heat Adjusted Power</i></a>
-            <span>
+            <i class="sub-section-heading">Heat Adjusted Power</i>
+            <a class="" href="https://heatadjustedpower.com" target="_blank"><i>Site</i></a>
+            <br>
+            <span style="top: 10px; position: relative">
               Heat Adjusted Power is the <i>only</i>
               model that is able to adjust cyclist's effort level for ambient temperature. This site was formally
               launched as a product by CCNS. Big thanks to <a href="https://ysph.yale.edu/profile/michael-kane/"
@@ -98,18 +109,34 @@
       <div class="section">
         <h2 class="section-heading">Education & Work Experience</h2>
         <div class="sub-section work-education alternating">
+          <img src="ucsd.png" style="height: 50px; margin-right: 20px;">
+          <span>
+            <a class="sub-section-heading" href="https://ucsd.edu" target="_blank">
+              <i>
+                University of California, San Diego
+              </i>
+            </a>
+            Ph.D. Student in Computer Science, advised by
+            <a href="https://ranjitjhala.github.io/" target="_blank">Ranjit Jhala</a>
+            and 
+            <a href="https://cseweb.ucsd.edu/~dstefan/" target="_blank">Deian Stefan</a>.
+          </span>
+        </div>
+        <div class="sub-section work-education alternating">
           <img src="BU.png" style="height: 50px; margin-right: 20px;">
           <span>
-            <a class="sub-section-heading" href="https://bu.edu" target="_blank"><i>Boston University - Computer Science</i></a>
+            <a class="sub-section-heading" href="https://bu.edu" target="_blank"><i>Boston University - Computer
+                Science</i></a>
             I graduated with a B.A. in CS from BU in May of 2022.
           </span>
         </div>
         <div class="sub-section work-education alternating">
-            <span style="flex-grow: 1;">
-              <a class="sub-section-heading" href="https://dimensional.com" target="_blank"><i>Dimensional Fund Advisors - Software Engineer</i></a>
-              I worked as a software engineer at DFA from 2022 - 2024.
-            </span>
-            <img src="DFA.png" style="height: 60px; margin-left: 15px;">
+          <span style="flex-grow: 1;">
+            <a class="sub-section-heading" href="https://dimensional.com" target="_blank"><i>Dimensional Fund Advisors -
+                Software Engineer</i></a>
+            I worked as a software engineer at DFA from 2022 - 2024.
+          </span>
+          <img src="DFA.png" style="height: 60px; margin-left: 15px;">
         </div>
       </div>
     </div>
